@@ -1237,6 +1237,16 @@ if [ $STREAM != NO ]; then
 
         . auto/module
     fi
+
+    if [ $STREAM_INJECT = YES ]; then
+        ngx_module_name=ngx_stream_inject_module
+        ngx_module_incs=src/stream
+        ngx_module_deps=src/stream/ngx_stream.h
+        ngx_module_srcs=src/stream/ngx_stream_inject_module.c
+        ngx_module_link=YES
+
+        . auto/module
+    fi
 fi
 
 
