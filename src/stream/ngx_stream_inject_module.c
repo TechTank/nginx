@@ -1,7 +1,7 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_stream.h>
-#include <ngx_stream_complex_value.h>
+#include <ngx_stream_script.h>
 
 
 //-----------------------------------------------------------------------------
