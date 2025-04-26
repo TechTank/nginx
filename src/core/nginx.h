@@ -8,10 +8,11 @@
 #ifndef _NGINX_H_INCLUDED_
 #define _NGINX_H_INCLUDED_
 
+#define NGINX_PRODUCT_NAME "nginx"
 
 #define nginx_version      1029000
 #define NGINX_VERSION      "1.29.0"
-#define NGINX_VER          "nginx/" NGINX_VERSION
+#define NGINX_VER          NGINX_PRODUCT_NAME "/" NGINX_VERSION
 
 #ifdef NGX_BUILD
 #define NGINX_VER_BUILD    NGINX_VER " (" NGX_BUILD ")"
